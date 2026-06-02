@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forja Fractal</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo-container">
+            <img src="./assets/images/Logo-Forja-Fractal.png" class="logo" alt="Logo">
+            <h1>Forja Fractal</h1>
+        </a>
+        <nav>
+            <a href="cursos.html">Cursos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="comunidad.html">Comunidad</a>
+            <div class="dropdown">
+                <a href="#">Categorías &#9662;</a>
+                <ul class="sub-menu">
+                    <li><a href="matematica.html">Matemática</a></li>
+                    <li><a href="fisica.html">Física</a></li>
+                    <li><a href="desarrollo_web.html">Desarrollo Web</a></li>
+                    <li><a href="programacion.html">Programación</a></li>
+                </ul>
+            </div>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <a href="#" class="btn">Menu</a>
+    </header>
+
+    <!--Carrusel de imagenes-->
+    <div class="slider">
+        <!-- Radios ocultos para controlar el carrusel -->
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+
+        <div class="slides-container">
+            <div class="slide slide-1">
+                <img src="./assets/images/image1.png" alt="">
+            </div>
+            <div class="slide slide-2">
+                <img src="./assets/images/image2.png" alt="">
+            </div>
+            <div class="slide slide-3">
+                <img src="./assets/images/image3.png" alt="">
+            </div>
+        </div>
+
+        <!-- Controles Flechas -->
+        <label for="s3" class="prev nav-1">&#10094;</label>
+        <label for="s2" class="next nav-1">&#10095;</label>
+
+        <label for="s1" class="prev nav-2">&#10094;</label>
+        <label for="s3" class="next nav-2">&#10095;</label>
+
+        <label for="s2" class="prev nav-3">&#10094;</label>
+        <label for="s1" class="next nav-3">&#10095;</label>
+
+        <!-- Indicadores -->
+        <div class="dots">
+            <label for="s1" class="dot dot-1"></label>
+            <label for="s2" class="dot dot-2"></label>
+            <label for="s3" class="dot dot-3"></label>
+        </div>
+    </div>
+    <!-- FINCarrusel -->
+
+    <!-- SECCIÓN: QUÉ ES LA PÁGINA / EL NEGOCIO -->
+    <section class="sec0 sobre-nosotros">
+        <div class="beneficios contenido-sobre-nosotros">
+            <h2 class="titulo-seccion">¿Qué es Forja Fractal?</h2>
+            <p>Forja Fractal es una academia digital de alto rendimiento especializada en ciencias exactas y tecnología. Nuestro propósito es transformar la manera en la que aprendes Matemática, Física, Desarrollo Web y Programación, convirtiendo conceptos complejos en conocimiento sumamente práctico y accesible. Preparamos y forjamos mentes analíticas listas para superar cualquier reto académico y profesional del futuro.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Wea_1L-C9Xo" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="titulo-seccion">Nuestra Metodología Fractal</h2>
+    <section class="sec1">
+        <div class="contenedor-modulo-1">
+            <div class="modulo" onclick="window.location.href='proximamente.html'" style="cursor: pointer;" title="Próximamente">
+                <h3 class="titulo-modulo">1. El Núcleo</h3>
+                <p class="descripcion-modulo">Comenzamos desde la base absoluta. Entendemos los conceptos fundamentales como piezas individuales antes de intentar armar el rompecabezas complejo.</p>
+            </div>
+        </div>
+        <div class="contenedor-modulo-2">
+            <div class="modulo" onclick="window.location.href='proximamente.html'" style="cursor: pointer;" title="Próximamente">
+                <h3 class="titulo-modulo">2. La Iteración</h3>
+                <p class="descripcion-modulo">Aplicamos el patrón. A través de la práctica constante y la repetición de ejercicios dinámicos, el conocimiento se asienta de manera natural y lógica.</p>
+            </div>
+        </div>
+        <div class="contenedor-modulo-3">
+            <div class="modulo" onclick="window.location.href='proximamente.html'" style="cursor: pointer;" title="Próximamente">
+                <h3 class="titulo-modulo">3. La Expansión</h3>
+                <p class="descripcion-modulo">Escalamos lo aprendido. Integramos los conceptos básicos en problemas de alta complejidad, expandiendo tu mente hacia el dominio total de la materia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: BENEFICIOS -->
+    <section class="sec2 beneficios">
+        <h2 class="titulo-seccion">Beneficios del Curso</h2>
+        <div class="fila-beneficio">
+            <div class="imagen-beneficio">
+                <img src="./assets/images/beneficio_acceso.png" alt="Acceso de por vida">
+            </div>
+            <div class="texto-beneficio">
+                <h3>Acceso de por vida</h3>
+                <p>Estudia a tu propio ritmo. Una vez que te inscribes, el material es tuyo para siempre, incluyendo futuras actualizaciones de por vida.</p>
+            </div>
+        </div>
+        <div class="fila-beneficio inverso">
+            <div class="imagen-beneficio">
+                <img src="./assets/images/beneficio_comunidad.png" alt="Comunidad VIP">
+            </div>
+            <div class="texto-beneficio">
+                <h3>Comunidad y Soporte VIP</h3>
+                <p>No estarás solo. Accede a nuestra comunidad exclusiva donde podrás resolver dudas directamente con los instructores y otros alumnos.</p>
+            </div>
+        </div>
+        <div class="fila-beneficio">
+            <div class="imagen-beneficio">
+                <img src="./assets/images/beneficio_certificado.png" alt="Certificado de Finalización">
+            </div>
+            <div class="texto-beneficio">
+                <h3>Certificado de Finalización</h3>
+                <p>Al terminar todos los Módulos, recibirás un certificado oficial que podrás agregar a tu currículum o perfil de LinkedIn para destacar profesionalmente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: AUTORIDAD / INSTRUCTOR -->
+    <section class="sec3 instructor">
+        <div class="contenedor-instructor">
+            <div class="foto-instructor">
+                <img src="./assets/images/instructor.png" alt="Instructor de Forja Fractal" style="width: 100%; border-radius: 50%; box-shadow: 0 15px 35px rgba(0,0,0,0.3);">
+            </div>
+            <div class="info-instructor">
+                <h2>Conoce a tu Instructor</h2>
+                <h3>Gerardo - Fundador de Forja Fractal</h3>
+                <p>Con años de experiencia enseñando Matemáticas, Física y Programación. He ayudado a cientos de estudiantes a superar sus límites y alcanzar sus metas académicas.</p>
+                <ul class="logros">
+                    <li>✓ Cientos de estudiantes satisfechos.</li>
+                    <li>✓ Experto en pedagogía digital.</li>
+                    <li>✓ Creador de la metodología "Fractal".</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+        <!-- SECCIÓN 5: CONTACTO -->
+        <section id="contacto" class="sec5 contacto">
+            <h2 class="titulo-seccion">Escríbenos</h2>
+            <form class="formulario-contacto" action="#" method="POST">
+                <div class="campo">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Gerardo Wateyma">
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="¿En qué te podemos ayudar?"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN 4: TESTIMONIOS -->
+        <section class="sec4 testimonios">
+            <h2 class="titulo-seccion">Lo que dicen nuestros estudiantes</h2>
+            <div class="grid-testimonios">
+                <div class="tarjeta-testimonio">
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"La mejor inversión que he hecho. Los conceptos complejos de Física ahora me parecen súper sencillos y fáciles de digerir."</p>
+                    <h4>- Ana López</h4>
+                </div>
+                <div class="tarjeta-testimonio">
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"El soporte es increíble. Siempre están ahí para responder mis dudas de Programación, no importa la hora."</p>
+                    <h4>- Carlos Pérez</h4>
+                </div>
+                <div class="tarjeta-testimonio">
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"Gracias a Forja Fractal logré aprobar mis exámenes de Matemáticas con la máxima nota. ¡100% recomendado!"</p>
+                    <h4>- María Fernández</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+            <p><strong>Gerardo Wateyma</strong></p>
+            <p class="copyright">&copy; 2026 Forja Fractal. Todos los derechos reservados.</p>
+        </div>
+        </footer>
+</body>
+
+</html>

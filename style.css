@@ -1,0 +1,177 @@
+* { box-sizing: border-box; }
+a { text-decoration: none; color: #00ADB5; }
+body {
+    margin: 0; padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #EEEEEE;
+    color: #222831;
+}
+
+/* ====== HEADER ====== */
+header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 40px;
+    background-color: #222831;
+}
+header a { color: #EEEEEE; }
+.logo-container { display: flex; align-items: center; gap: 15px; }
+.logo-container h1 { font-size: 24px; margin: 0; }
+nav { display: flex; align-items: center; gap: 30px; }
+nav a { font-size: 16px; }
+
+.dropdown { position: relative; }
+.sub-menu {
+    top: 100%; position: absolute; left: 0;
+    background-color: #393E46; border: 1px solid #222831;
+    padding: 10px 0; margin: 0; display: none; list-style: none; z-index: 10;
+    min-width: 150px;
+}
+.sub-menu li { padding: 10px 20px; }
+.sub-menu a { color: #EEEEEE; display: block; }
+img.logo { max-height: 100px; width: auto; object-fit: contain; }
+.dropdown:hover .sub-menu { display: block; }
+
+/* El boton de menu (solo visible en moviles si se implementa JS, pero por ahora lo ocultamos en desktop) */
+header .btn { color: #00ADB5; font-weight: bold; display: none; }
+
+/* ====== CARRUSEL ====== */
+.slider { position: relative; width: 100%; height: 500px; overflow: hidden; }
+input[type="radio"] { display: none; }
+.slides-container { width: 100%; height: 100%; position: relative; }
+.slide { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.slide img { width: 100%; height: 100%; object-fit: cover; }
+.prev, .next {
+    display: none; cursor: pointer; position: absolute; top: 50%; transform: translateY(-50%);
+    padding: 16px; color: #EEEEEE; font-weight: bold; font-size: 24px;
+    background-color: rgba(34, 40, 49, 0.4); text-decoration: none; user-select: none; z-index: 10;
+}
+.next { right: 0; }
+.dots { position: absolute; bottom: 20px; width: 100%; text-align: center; z-index: 10; }
+.dot {
+    cursor: pointer; height: 12px; width: 12px; margin: 0 4px;
+    background-color: rgba(238, 238, 238, 0.4); border-radius: 50%; display: inline-block;
+}
+.dot:hover { background-color: #00ADB5; }
+#s1:checked~.slides-container .slide-1, #s2:checked~.slides-container .slide-2, #s3:checked~.slides-container .slide-3 { display: block; }
+#s1:checked~.nav-1, #s2:checked~.nav-2, #s3:checked~.nav-3 { display: block; }
+#s1:checked~.dots .dot-1, #s2:checked~.dots .dot-2, #s3:checked~.dots .dot-3 { background-color: #00ADB5; }
+
+/* ====== TITULOS GENERALES ====== */
+.titulo-seccion { text-align: center; font-size: 36px; margin: 60px 0 40px; color: #222831; }
+
+/* ====== MÓDULOS ====== */
+.titulo-modulo { text-align: center; color: #222831; margin-top: 40px;}
+.sec1 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+.modulo {
+    background-color: #393E46; padding: 30px; border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(34,40,49,0.1); text-align: center; border: 1px solid #222831;
+}
+.modulo .titulo-modulo { color: #00ADB5; font-size: 24px; margin-top: 0; margin-bottom: 15px; }
+.modulo .descripcion-modulo { color: #EEEEEE; line-height: 1.5; margin: 0; }
+
+/* ====== BENEFICIOS ====== */
+.beneficios { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+.fila-beneficio { display: flex; align-items: center; gap: 40px; margin-bottom: 60px; }
+.fila-beneficio.inverso { flex-direction: row-reverse; }
+.imagen-beneficio, .texto-beneficio { flex: 1; }
+.imagen-beneficio img { width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(34,40,49,0.2); object-fit: cover; }
+.texto-beneficio h3 { font-size: 28px; color: #00ADB5; margin-bottom: 15px; margin-top: 0; }
+.texto-beneficio p { font-size: 18px; color: #393E46; line-height: 1.6; margin: 0; }
+
+/* ====== INSTRUCTOR ====== */
+.instructor { background-color: #222831; padding: 100px 20px; margin-top: 60px; }
+.contenedor-instructor { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; gap: 60px; }
+.foto-instructor { flex: 1; }
+.foto-instructor img { width: 100%; border-radius: 50%; box-shadow: 0 15px 35px rgba(0,0,0,0.3); aspect-ratio: 1/1; object-fit: cover; }
+.info-instructor { flex: 1.5; }
+.info-instructor h2 { font-size: 36px; color: #EEEEEE; margin-bottom: 10px; margin-top: 0; }
+.info-instructor h3 { font-size: 22px; color: #00ADB5; margin-bottom: 20px; margin-top: 0; }
+.info-instructor p { font-size: 18px; color: #EEEEEE; line-height: 1.6; margin-bottom: 20px; }
+.logros { list-style: none; padding: 0; margin: 0; }
+.logros li { font-size: 18px; color: #00ADB5; margin-bottom: 10px; font-weight: bold; }
+
+/* ====== TESTIMONIOS ====== */
+.testimonios { max-width: 1200px; margin: 80px auto 40px; padding: 0 20px; }
+.grid-testimonios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.tarjeta-testimonio {
+    background-color: #393E46; padding: 40px 30px; border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(34,40,49,0.1); text-align: center; border: 1px solid #222831;
+}
+.estrellas { font-size: 24px; margin-bottom: 20px; }
+.tarjeta-testimonio p { font-style: normal; color: #FFFFFF; font-size: 16px; line-height: 1.6; margin-bottom: 20px; margin-top: 0;}
+.tarjeta-testimonio h4 { color: #00ADB5; font-size: 18px; margin: 0; }
+
+
+/* ====== RESPONSIVE (MÓVILES Y TABLETS) ====== */
+@media (max-width: 900px) {
+    /* Header */
+    header { flex-direction: column; gap: 20px; padding: 20px; }
+    nav { flex-wrap: wrap; justify-content: center; gap: 15px; }
+
+    /* Módulos y Testimonios */
+    .sec1, .grid-testimonios { grid-template-columns: repeat(2, 1fr); }
+    
+    /* Beneficios e Instructor */
+    .fila-beneficio, .fila-beneficio.inverso, .contenedor-instructor { 
+        flex-direction: column; text-align: center; gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-seccion { font-size: 28px; }
+    .slider { height: 300px; }
+
+    /* Todo a 1 columna */
+    .sec1, .grid-testimonios { grid-template-columns: 1fr; }
+    .foto-instructor img { width: 80%; }
+}
+
+/* ====== FORMULARIO DE CONTACTO ====== */
+.contacto { max-width: 600px; margin: 80px auto 100px; padding: 40px 20px; background-color: #393E46; border-radius: 12px; box-shadow: 0 5px 20px rgba(34,40,49,0.1); border: 1px solid #222831; }
+.contacto .titulo-seccion { color: #EEEEEE; margin-top: 0; }
+.formulario-contacto { display: flex; flex-direction: column; gap: 20px; }
+.campo { display: flex; flex-direction: column; gap: 8px; text-align: left; }
+.campo label { color: #00ADB5; font-weight: bold; }
+.campo input, .campo textarea { width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #222831; background-color: #EEEEEE; color: #222831; font-family: inherit; font-size: 16px; }
+.btn-enviar { padding: 15px; background-color: #00ADB5; color: #EEEEEE; font-weight: bold; font-size: 18px; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.3s; }
+.btn-enviar:hover { background-color: #008f95; }
+
+/* ====== FOOTER ====== */
+footer { background-color: #222831; color: #EEEEEE; padding: 40px 20px; text-align: center; border-top: 5px solid #00ADB5; }
+.footer-content p { line-height: 1.6; margin: 5px 0; }
+.footer-content strong { color: #00ADB5; font-size: 18px; }
+.copyright { margin-top: 20px; font-size: 14px; color: #888; }
+
+/* ====== SOBRE NOSOTROS (Añadido sin estilos en línea) ====== */
+.sec0.sobre-nosotros { padding: 80px 20px; }
+.contenido-sobre-nosotros { padding-top: 0; }
+.contenido-sobre-nosotros p {
+    font-size: 20px; color: #393E46; max-width: 800px;
+    margin: 0 auto; text-align: center; line-height: 1.6;
+}
+
+/* ====== VIDEO INSTRUCTOR (Sin estilos en línea) ====== */
+.video-instructor {
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+
+/* ====== VIDEOS RESPONSIVOS ====== */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding-bottom: 45%; /* 16:9 ratio adapted for max-width */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}

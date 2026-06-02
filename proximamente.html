@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forja Fractal - Próximamente</title>
+    <style>
+        .proximamente-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+            padding: 40px;
+        }
+        .proximamente-container h1 {
+            font-size: 48px;
+            color: #00ADB5;
+            margin-bottom: 20px;
+        }
+        .proximamente-container p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+        .btn-volver {
+            display: inline-block;
+            background-color: #00ADB5;
+            color: #EEEEEE;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-volver:hover {
+            background-color: #007a82;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./assets/images/logo.png" alt="Forja Fractal Logo" class="logo">
+            <h1>Forja Fractal</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="comunidad.html">Comunidad</a></li>
+                <li class="dropdown">
+                    <a href="#">Categorías ▾</a>
+                    <ul class="sub-menu">
+                        <li><a href="matematica.html">Matemática</a></li>
+                        <li><a href="fisica.html">Física</a></li>
+                        <li><a href="desarrollo_web.html">Desarrollo Web</a></li>
+                        <li><a href="programacion.html">Programación</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="index.html#contacto" class="btn">Contacto</a>
+    </header>
+
+    <main class="proximamente-container">
+        <h1>¡Próximamente!</h1>
+        <p>Estamos trabajando arduamente en el desarrollo de este nuevo módulo de la Metodología Fractal. Muy pronto estará disponible con ejercicios prácticos y contenido exclusivo.</p>
+        <a href="index.html" class="btn-volver">Volver al Inicio</a>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Gerardo Wateyma</strong></p>
+            <p class="copyright">&copy; 2026 Forja Fractal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

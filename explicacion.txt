@@ -1,0 +1,18 @@
+REPÚBLICA BOLIVARIANA DE VENEZUELA
+UNIVERSIDAD BICENTENARIA DE ARAGUA
+VICERRECTORADO ACADÉMICO
+DECANATO DE LA FACULTAD DE INGENIERÍA
+ESCUELAS DE ELÉCTRICA Y SISTEMAS
+SAN JOAQUÍN DE TURMERO ESTADO-ARAGUA
+
+Gerardo Wateyma
+CI: 32468353
+
+
+Forja Fractal: Plataforma Educativa de Ciencias Exactas y Programación
+
+La temática central del sitio web desarrollado se enfoca en "Forja Fractal", una academia en línea dedicada a la enseñanza interactiva y moderna de disciplinas fundamentales para estudiantes de ingeniería y ciencias aplicadas, tales como Matemática, Física, Química y Programación. El propósito de la plataforma es servir como un embudo de ventas (Landing Page) efectivo que guíe al usuario desde el descubrimiento del curso hasta la inscripción, generando confianza a través de una estructura clara y un diseño semántico amigable, construido enteramente bajo los estándares de HTML5 y CSS puro, sin el uso de frameworks.
+
+El sitio web está diseñado con un esquema de colores modernos (Dark Mode / Teal) que invita a la concentración y refleja profesionalismo. A nivel técnico, la plataforma cuenta con una página principal (Landing Page) que expone los beneficios clave del aprendizaje, una presentación multimedia del instructor principal (empleando la etiqueta de <video> de HTML5), un catálogo estructurado de los módulos que conforman los cursos, y una sección de testimonios para validación social. Además, se integra un formulario de contacto validado y un pie de página semántico con información institucional y de autoría.
+
+Como complemento, la navegación del sitio ha sido ramificada a través de una barra superior (Navbar) hacia tres pantallas secundarias: "Cursos", "Nosotros" y "Comunidad VIP". Cada una de estas páginas ha sido diagramada siguiendo el requerimiento de combinar de manera armoniosa texto e imágenes, asegurando la consistencia del diseño responsivo en múltiples dispositivos. El desarrollo íntegro de este proyecto consolida los fundamentos de la maquetación web semántica y el manejo avanzado de estilos en cascada para la creación de interfaces de usuario modernas.
