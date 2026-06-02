@@ -175,37 +175,95 @@ footer { background-color: #222831; color: #EEEEEE; padding: 40px 20px; text-ali
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
+/* ====== HAMBURGER MENU HACK ====== */
+.menu-toggle, .hamburger {
+    display: none;
+}
+
 /* ====== RESPONSIVE DESIGN (MÓVILES Y TABLETS) ====== */
 @media (max-width: 768px) {
     /* Header y Navegación */
     header {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding: 15px 20px;
-        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
     }
+    
+    .logo-container {
+        flex: 1;
+    }
+    
+    /* Hamburger Icon */
+    .hamburger {
+        display: block;
+        font-size: 32px;
+        color: #EEEEEE;
+        cursor: pointer;
+        user-select: none;
+        padding: 5px 10px;
+    }
+    
+    /* Esconder el nav por defecto */
     nav {
-        flex-direction: column;
-        gap: 10px;
+        display: none;
         width: 100%;
+        margin-top: 15px;
+        background-color: #393E46;
+        border-radius: 8px;
+        padding: 15px 0;
         text-align: center;
     }
+    
+    /* Mostrar nav cuando el checkbox está seleccionado */
+    .menu-toggle:checked ~ nav {
+        display: flex;
+        flex-direction: column;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
     .nav-links {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         width: 100%;
     }
+    
+    .nav-links li {
+        width: 100%;
+    }
+    
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
     .dropdown .sub-menu {
         position: static;
         width: 100%;
         box-shadow: none;
         background-color: transparent;
         display: none;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #4a505c;
     }
-    .dropdown:hover .sub-menu {
-        display: block;
+    
+    .dropdown:hover .sub-menu, .dropdown:active .sub-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
-    .btn {
-        display: none; /* Ocultar el boton 'Menu' extra si no se usa con JS */
+    
+    /* Ocultar botón extra */
+    header > .btn {
+        display: none; 
     }
 
     /* Secciones Generales */

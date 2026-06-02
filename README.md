@@ -18,7 +18,4 @@ Nuestra metodología de estudio se divide en tres pasos iterativos:
 
 ## 🛠️ Tecnologías Utilizadas
 - **HTML5:** Estructura semántica pura.
-- **CSS3:** Diseño responsivo, Dark Mode UI, Grid y Flexbox (Sin frameworks externos).
-
-## 👨‍💻 Autor
-**Gerardo Wateyma**
+- **CSS3:** Diseño responsivo, Dark Mode UI, Grid y Flexbox.
