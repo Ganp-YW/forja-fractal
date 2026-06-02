@@ -175,3 +175,68 @@ footer { background-color: #222831; color: #EEEEEE; padding: 40px 20px; text-ali
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
+/* ====== RESPONSIVE DESIGN (MÓVILES Y TABLETS) ====== */
+@media (max-width: 768px) {
+    /* Header y Navegación */
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .dropdown .sub-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        display: none;
+    }
+    .dropdown:hover .sub-menu {
+        display: block;
+    }
+    .btn {
+        display: none; /* Ocultar el boton 'Menu' extra si no se usa con JS */
+    }
+
+    /* Secciones Generales */
+    .sec1, .grid-testimonios {
+        grid-template-columns: 1fr;
+    }
+    
+    .fila-beneficio, .fila-beneficio.inverso, .contenedor-instructor {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .imagen-beneficio, .texto-beneficio, .foto-instructor, .info-instructor {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .imagen-beneficio img {
+        margin: 0 auto;
+    }
+    
+    .contacto {
+        margin: 40px 20px;
+    }
+    
+    .titulo-seccion {
+        font-size: 28px;
+    }
+    
+    .proximamente-container h1 {
+        font-size: 32px;
+    }
+}
